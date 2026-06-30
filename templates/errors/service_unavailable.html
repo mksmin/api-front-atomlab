@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}
+  Сервис временно недоступен
+{% endblock %}
+
+{% block content %}
+    <section
+        class="
+        full-screen
+        d-flex
+        justify-content-center
+        align-items-center
+        w-100
+        h-100
+        position-relative
+        overflow-x-hidden"
+    >
+      <div class="gradient gradient-error" style="--top: 50%">
+        <div class="wrapper" style="--size: 500px">
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+        </div>
+      </div>
+
+      <div class="form-signin w-100 m-auto">
+        <h1 class="mb-3 header" id="statusAuth" style="font-size: clamp(2rem, 9vw, 4.5rem)">
+          <span class="word">
+        Сервис временно
+      </span>
+          <span class="word color-error">недоступен</span>
+        </h1>
+        <h4 class="header" id="statusAuth">
+          <span class="word">
+        Попробуй снова через несколько минут
+      </span>
+        </h4>
+        <div class="my-5"></div>
+        <a class="btn btn-lg btn-dark btn-gradient btn-telegram bg-color-white"
+           href="/affirmations">
+         Попробовать снова
+        </a>
+      </div>
+    </section>
+
+{% endblock %}
